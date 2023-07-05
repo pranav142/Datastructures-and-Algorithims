@@ -25,11 +25,11 @@ def effecient_solution(n):
 if __name__ == "__main__":
 
     naive_start = time.time()
-    print(fibrecurs(30))
+    print(fibrecurs(10))
     naive_end = time.time()
 
     effecient_start = time.time()
-    print(effecient_solution(30))
+    print(effecient_solution(331))
     effecient_end = time.time()
 
     # Naive solution took 0.112 seconds, Effecient solution took 0.000 seconds
