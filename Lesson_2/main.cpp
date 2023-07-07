@@ -11,6 +11,10 @@ int get_index_best_item(std::vector<std::tuple<int, int>> &);
 
 std::tuple<int, std::vector<int>> loot_max_value(std::vector<std::tuple<int, int>> &, int);
 
+int find_minimum_coins(int&);
+
+int find_maximum_ad_revenue(std::vector<int>& num_clicks, std::vector<int>& ad_pay);
+
 int main()
 {
     /* max salary problem */
@@ -53,7 +57,7 @@ int main()
     if (best_item_index == 2) std::cout << "passed got value "<< best_item_index << std::endl;
     else std::cout << "best_item_index failed";*/
 
-    std::vector<std::tuple<int, int>> items = {{5, 30}, {4, 28}, {3, 24}};
+    /*std::vector<std::tuple<int, int>> items = {{5, 30}, {4, 28}, {3, 24}};
     int carrying_capacity = 9;
     std::tuple<int, std::vector<int>> loot = loot_max_value(items, carrying_capacity);
     std::vector<int> amounts = std::get<1>(loot);
@@ -63,5 +67,18 @@ int main()
     for (int i = 0; i < amounts.size(); i++)
     {
         std::cout << "amount taken of item number " << i << ": " << amounts[i] << std::endl;
-    }
+    }*/
+
+    /* Assignment 3 Money Change Problem */
+
+    /*int amount = 28;
+    std::cout << find_minimum_coins(amount) << std::endl;
+    */
+
+    /* Assignment 3 Find max revenue problem */
+
+    std::vector<int> a = { 1, 3, -5 };
+    std::vector<int> b = { -2, 4, 1 };
+    std::cout << find_maximum_ad_revenue(a, b) << std::endl;
+
 }
