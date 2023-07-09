@@ -1,19 +1,7 @@
 #include <iostream>
 #include <vector>
 
-int find_minimum_waiting_time(std::vector<int> &, const std::vector<int> &);
-
-int find_max_salary(const std::vector<int> &);
-
-std::vector<std::tuple<int, int>> find_best_group(const std::vector<int> &);
-
-int get_index_best_item(std::vector<std::tuple<int, int>> &);
-
-std::tuple<int, std::vector<int>> loot_max_value(std::vector<std::tuple<int, int>> &, int);
-
-int find_minimum_coins(int&);
-
-int find_maximum_ad_revenue(std::vector<int>& num_clicks, std::vector<int>& ad_pay);
+#include "lesson_2.h"
 
 int main()
 {
@@ -77,8 +65,27 @@ int main()
 
     /* Assignment 3 Find max revenue problem */
 
-    std::vector<int> a = { 1, 3, -5 };
+    /*std::vector<int> a = { 1, 3, -5 };
     std::vector<int> b = { -2, 4, 1 };
-    std::cout << find_maximum_ad_revenue(a, b) << std::endl;
+    std::cout << find_maximum_ad_revenue(a, b) << std::endl;*/
+    
+    /* Assignment 3 Find Segments*/
+    /*std::vector<std::tuple<int, int>> segments = { {1, 3}, {2, 5}, {3, 6} };
+    std::vector<int> intersections = find_least_segment_intersections(segments);
 
+    for (auto& intersection : intersections)
+    {
+        std::cout << intersection << std::endl;
+    }*/
+
+
+    /* Assignment 3 Find Max Prizes*/
+    int num_candies = 2;
+    std::vector<int> candy_distribution = find_max_prizes(num_candies);
+
+    std::cout << candy_distribution.size() << std::endl;
+    for (auto& item : candy_distribution)
+    {
+        std::cout << item << " ";
+    }
 }
