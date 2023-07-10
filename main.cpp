@@ -1,7 +1,4 @@
-#include <iostream>
-#include <vector>
-
-#include "lesson_2.h"
+#include "main.h"
 
 int main()
 {
@@ -80,12 +77,17 @@ int main()
 
 
     /* Assignment 3 Find Max Prizes*/
-    int num_candies = 2;
+    /*int num_candies = 2;
     std::vector<int> candy_distribution = find_max_prizes(num_candies);
 
     std::cout << candy_distribution.size() << std::endl;
     for (auto& item : candy_distribution)
     {
         std::cout << item << " ";
-    }
+    }*/
+
+    int array[] = { 1, 2, 3, 4, 5, 6, 7 }; 
+   
+    std::cout<<binary_search_recursive(array, 0, 6, 5)<<std::endl;
+
 }
