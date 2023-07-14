@@ -86,8 +86,16 @@ int main()
         std::cout << item << " ";
     }*/
 
-    int array[] = { 1, 2, 3, 4, 5, 6, 7 }; 
+   /* int array[] = { 1, 2, 3, 4, 5, 6, 7 }; 
    
-    std::cout<<binary_search_recursive(array, 0, 6, 5)<<std::endl;
+    std::cout<<binary_search_recursive(array, 0, 6, 5)<<std::endl;*/
+    
+    int array[] = { 1, 2, 9, 3, 1, 4, 7 };
 
+    selection_sort(array, 6); 
+
+    for (auto& item : array)
+    {
+        std::cout << item << " ";
+    }
 }
