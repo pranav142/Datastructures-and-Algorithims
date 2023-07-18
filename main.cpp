@@ -90,12 +90,20 @@ int main()
    
     std::cout<<binary_search_recursive(array, 0, 6, 5)<<std::endl;*/
     
-    int array[] = { 1, 2, 9, 3, 1, 4, 7 };
+    int array1[] = { 1, 2, 9, 3, 1, 4, 7 };
+    std::vector<int> array = { 1, 2, 9, 3, 1, 4, 7 };
+    selection_sort(array1, 7); 
 
-    selection_sort(array, 6); 
-
-    for (auto& item : array)
+    for (auto& item : array1)
     {
         std::cout << item << " ";
+    }
+    
+    merge_sort(array, 0, 6);
+    
+    std::cout << std::endl; 
+    for (auto& item : array)
+    {
+        std::cout << item << " "; 
     }
 }
